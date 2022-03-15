@@ -31,17 +31,7 @@ jobs:
         run: pip install requests
         # 运行脚本
       - name: 'Working'
+        env:	#添加环境变量
+          SCKEY: ${{ secrets.SCKEY }}
+          SKEY: ${{ secrets.SKEY }}
         run: python ./weater.py
-              - name: 'Send mail'
-        uses: dawidd6/action-send-mail@master
-        with:
-          server_address: smtp.qq.com
-          server_port: 465
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          subject: 天气预报 (${{env.REPORT_DATE}})
-          body: file://result.html
-          to: mehoney99@163.com
-          from: GitHub Actions
-          content_type: text/html
-
