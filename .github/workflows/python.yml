@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v1
         # 安装初始化python
       - name: 'Set up Python'
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2
         with:
           python-version: 2.6
         # 安装脚本所需的依赖
