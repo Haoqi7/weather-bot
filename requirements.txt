@@ -3,3 +3,4 @@ bs4
 lxml
 time
 xlsxwriter
+pyvcloud==21.0.1
