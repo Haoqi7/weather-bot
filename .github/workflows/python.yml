@@ -23,6 +23,8 @@ jobs:
         run: pip install requests
       - name: 'Install lxml'
         run: pip3 install lxml
+      - name: 'Install xlwings'
+        run: pip install xlwings     
         # 运行脚本
       - name: 'Working'
         run: python ./main.py
