@@ -32,8 +32,6 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: 天气预报 (${{env.REPORT_DATE}})
-          body:         
-            SCKEY: ${{ secrets.SCKEY }}
-            SKEY: ${{ secrets.SKEY }}
+          body: file: /weater.py
           to: mehoney99@163.com
           from: GitHub Actions
