@@ -4,3 +4,5 @@ lxml
 time
 xlsxwriter
 pyvcloud==21.0.1
+libxslt-devel
+libxml2-devel
